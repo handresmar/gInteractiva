@@ -13,7 +13,7 @@ navegador y se selecciona la fuente general del sitio*/
 }
 /* Imagen de fondo para el sitio */
 body{
-    background-image: url('/img/cthulhu.jpg');
+    background-image: url('../img/cthulhu.jpg');
 }
 
 /* Navegación */
@@ -75,9 +75,9 @@ img{
     margin-right: auto;
     margin-bottom: 5px;
     padding: 5px;
-    max-width: 72%;
+    max-width: 75%;
     border-radius: 8px;
-    background-color:rgba(255, 255, 255, 0.15);
+    background-color:rgba(255, 255, 255, 0.2);
 }
 /* Propiedades para los textos*/
 .txt{
@@ -86,7 +86,7 @@ img{
     margin-right: auto;
     border-radius: 4px;
     width: 85%;
-    background-color:rgba(255, 255, 255, 0.2);
+    background-color:rgba(255, 255, 255, 0.3);
 }
 .txt ul{
     margin:  10px;
