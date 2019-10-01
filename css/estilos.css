@@ -4,7 +4,7 @@ navegador y se selecciona la fuente general del sitio*/
     margin: 0; 
     padding: 0;
     outline:none;
-    color: #2c2014;
+    
 }
 /* Fuente */
 @font-face {
@@ -14,6 +14,7 @@ navegador y se selecciona la fuente general del sitio*/
 /* Imagen de fondo para el sitio */
 body{
     background-image: url('../img/cthulhu.jpg');
+    color: #2c2014;
 }
 
 /* Navegación */
@@ -23,8 +24,7 @@ nav{
     max-width: 85%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 0.8rem;
-    
+    font-size: 0.8rem;    
 }
 .nav ul{
     display: grid;
@@ -58,14 +58,19 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 4px;
+    border: 1px solid rgb(8, 9, 51);
     padding: 6px;
     border-radius: 8px;
 }
 /*  Imagen principal */
 .sarnath{
     max-width: 800px;
+}
+/*Habitantes imgs*/
+.ha-imgs{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
 }
 /*Resumen index*/
 .summ{
@@ -78,6 +83,44 @@ img{
     max-width: 75%;
     border-radius: 8px;
     background-color:rgba(255, 255, 255, 0.2);
+}
+/*Ficha*/
+.ficha{
+    display: grid;
+    background: rgba(35, 51, 67, 0.9);
+    width: auto;
+    height: auto;
+    margin: 3px;
+    border: solid 1px rgb(8, 9, 51);
+    padding: 3px;
+    color: #BBBBBB;
+    text-align: justify;
+    grid-column-end: -1;
+}
+.ficha h3{
+    text-align: center;
+}
+.ficha img{
+    border: none;
+}
+.legend{
+    margin-top: 0;
+    margin: 5px;
+}
+
+.txt-act{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 85%;
+    background-color:rgba(255, 255, 255, 0.3);
+}
+.content{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 /* Propiedades para los textos*/
 .txt{
