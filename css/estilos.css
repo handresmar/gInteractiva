@@ -87,6 +87,14 @@ footer{
     text-align: center;
 }
 @media screen and (max-width: 480px ) {
+    .nav ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        width: 230px;
+        margin-bottom: 5px;
+    }
+    
     .txt{
         width: 420px;
     }
@@ -100,8 +108,9 @@ footer{
         max-width: 400px;
     }
     .ha-imgs{
-        max-width: 300px;
+        max-width: 200px;
     }
+
 }
 
 
@@ -120,6 +129,12 @@ footer{
     }
     .ha-imgs{
         margin-bottom: 10px;
+    }
+    nav ul{
+        gap: 3px;
+    }
+    nav a{
+        font-size: 10px;
     }
 }
 
@@ -153,13 +168,7 @@ footer{
     }
 
     nav a{
-        background:#1a2632;
-        display: block;
-        text-decoration: none;
         padding: 0.8rem;  
-        text-align: center;
-        color:  #BBBBBB;
-        text-transform: uppercase;
         font-size: 16px;
         box-shadow: 3px 3px 1px  rgba(150, 150, 150, 0.5);
         border-radius: 3px;
