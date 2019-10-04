@@ -16,37 +16,40 @@ body{
     background-image: url('../img/cthulhu.jpg');
     color: #2c2014;
 }
-
+.wrapper{
+    display: grid;
+    gap: 20px;
+}
 /* Navegación */
 nav{
     display: block;
     margin-top: 5px;
-    max-width: 85%;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 0.8rem;    
+    font-size: 0.8rem; 
+    margin-left: 10%;
 }
 .nav ul{
     display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 20px;
-    width: 10px;
+    padding: 0;
     list-style: none;
-    grid-template-columns: repeat(5, 1fr);
+
 }
 
 nav a{
     background:#1a2632;
     display: block;
-    border-radius: 3px;
-    width: 200px;
-    height: 12px;
     text-decoration: none;
-    padding: 0.8rem;
+    padding: 0.8rem;  
+    text-align: center;
     color:  #BBBBBB;
     text-transform: uppercase;
-    text-align: center;
     font-size: 16px;
     box-shadow: 3px 3px 1px  rgba(150, 150, 150, 0.5);
+    border-radius: 3px;
+    height: 12px;
+    min-width: 100;
+ 
     
 }
 nav a:hover{
@@ -67,10 +70,20 @@ img{
     max-width: 800px;
 }
 /*Habitantes imgs*/
-.ha-imgs{
+.ha-imgs3{
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    border: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+    align-self: auto;
+}
+.ha-imgs2{
+    display: grid;
+    gap: 20px;
+    border: 0px;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: auto;
 }
 /*Resumen index*/
 .summ{
@@ -115,7 +128,7 @@ img{
     margin-right: auto;
     margin-top: 10px;
     border-radius: 4px;
-    width: 85%;
+    width: 900px;
     background-color:rgba(255, 255, 255, 0.3);
 }
 .content{
@@ -128,7 +141,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
-    width: 85%;
+    max-width: 800px;
     background-color:rgba(255, 255, 255, 0.3);
 }
 .txt ul{
