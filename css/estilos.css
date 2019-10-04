@@ -1,91 +1,41 @@
 /* Estilos generales para el sitio, se quitan los padding y los margin por defecto del 
-navegador y se selecciona la fuente general del sitio*/
+navegador*/
 *{
     margin: 0; 
     padding: 0;
     outline:none;
-    
 }
-/* Fuente */
 @font-face {
     font-family: 'poppings';
     src: url('./fuentes/Poppings-Regular.ttf');
 }
-/* Imagen de fondo para el sitio */
-body{
-    background-image: url('../img/cthulhu.jpg');
-    color: #2c2014;
-}
-.wrapper{
-    display: grid;
-    gap: 20px;
-}
-/* Navegación */
+
 nav{
     display: block;
     margin-top: 5px;
-    font-size: 0.8rem; 
-    margin-left: 10%;
 }
 .nav ul{
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 20px;
-    padding: 0;
+    grid-template-columns: repeat(6, 1fr);
     list-style: none;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav a{
     background:#1a2632;
     display: block;
     text-decoration: none;
-    padding: 0.8rem;  
     text-align: center;
     color:  #BBBBBB;
     text-transform: uppercase;
-    font-size: 16px;
-    box-shadow: 3px 3px 1px  rgba(150, 150, 150, 0.5);
     border-radius: 3px;
-    height: 12px;
-    min-width: 100;
- 
-    
 }
 nav a:hover{
     background:#233343;
 }
 
-/* propiedades para las imagenes */
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid rgb(8, 9, 51);
-    padding: 6px;
-    border-radius: 8px;
-}
-/*  Imagen principal */
-.sarnath{
-    max-width: 800px;
-}
-/*Habitantes imgs*/
-.ha-imgs3{
-    display: grid;
-    gap: 20px;
-    border: 0px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 20px;
-    align-self: auto;
-}
-.ha-imgs2{
-    display: grid;
-    gap: 20px;
-    border: 0px;
-    grid-template-columns: repeat(2, 1fr);
-    align-self: auto;
-}
-/*Resumen index*/
+ /*Resumen index*/
 .summ{
     display: block;
     text-align: justify;
@@ -97,78 +47,221 @@ img{
     border-radius: 8px;
     background-color:rgba(255, 255, 255, 0.2);
 }
-/*Ficha*/
-.ficha{
-    display: grid;
-    background: rgba(35, 51, 67, 0.9);
-    width: auto;
-    height: auto;
-    margin: 3px;
-    border: solid 1px rgb(8, 9, 51);
-    padding: 3px;
-    color: #BBBBBB;
-    text-align: justify;
-    grid-column-end: -1;
+body{
+    background-image: url('../img/cthulhu.jpg');
+    color: #2c2014;
 }
-.ficha h3{
-    text-align: center;
-}
-.ficha img{
-    border: none;
-}
-.legend{
-    margin-top: 0;
-    margin: 5px;
-}
-
-.txt-act{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    border-radius: 4px;
-    width: 900px;
-    background-color:rgba(255, 255, 255, 0.3);
-}
-.content{
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-/* Propiedades para los textos*/
 .txt{
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
-    max-width: 800px;
     background-color:rgba(255, 255, 255, 0.3);
 }
-.txt ul{
-    margin:  10px;
-    padding: 10px;
+
+.txt-act{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px; 
+    background-color:rgba(255, 255, 255, 0.3);
 }
-p{  
-    padding: 10px;
-    margin: 5px;
-    font-size: 1.1rem;
-    text-align: justify;    
-}
-h1, h2 {
+
+h1, h2, .ficha h3 {
     text-align: center;
-    margin: 10px;
 }
 h1{
     text-transform: uppercase;
-    font-size: 3rem;
 }
-h2{
-    font-size: 2rem;
+
+p{  
+    text-align: justify;    
 }
-h3{
-    padding: 10px;
-    font-size: 1.5rem;
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 footer{
     text-align: center;
 }
+@media screen and (max-width: 480px ) {
+    .txt{
+        width: 420px;
+    }
+
+    p{  
+        padding: 5px;
+        margin: 3px;   
+    }
+
+    img{
+        max-width: 400px;
+    }
+    .ha-imgs{
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 780px ) {
+    p{  
+        padding: 7px;
+        margin: 5px;   
+    }
+
+    img{
+        width: 450px;
+        align-self: auto;
+    }
+    .ficha img{
+        border: none;
+    }
+    .ha-imgs{
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 780px ) {
+    /* Fuente */
+
+    /* Imagen de fondo para el sitio */
+
+    .wrapper{
+        display: grid;
+        gap: 20px;
+    }
+    /* Navegación */
+    nav{
+        display: block;
+        margin-top: 5px;
+        font-size: 0.8rem; 
+   
+    }
+    .nav ul{
+        display: grid;
+        min-width: 700px;
+        max-width: 1200px;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav a{
+        background:#1a2632;
+        display: block;
+        text-decoration: none;
+        padding: 0.8rem;  
+        text-align: center;
+        color:  #BBBBBB;
+        text-transform: uppercase;
+        font-size: 16px;
+        box-shadow: 3px 3px 1px  rgba(150, 150, 150, 0.5);
+        border-radius: 3px;
+        height: 12px;
+        min-width: 100;
+    }
+    nav a:hover{
+        background:#233343;
+    }
+
+    /* propiedades para las imagenes */
+    img{
+        border: 1px solid rgb(8, 9, 51);
+        padding: 6px;
+        border-radius: 8px;
+    }
+    /*  Imagen principal */
+    .sarnath{
+        max-width: 750px;
+    }
+    /*Habitantes imgs*/
+    .ha-imgs{
+        height: 300px;
+    }
+    .ha-imgs3{
+        display: grid;
+        gap: 20px;
+        border: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 20px;
+        align-self: auto;
+    }
+    .ha-imgs2{
+        display: grid;
+        gap: 20px;
+        border: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        align-self: auto;
+    }
+
+    /*Ficha*/
+    .ficha{
+        display: grid;
+        background: rgba(35, 51, 67, 0.9);
+        max-width: 350px;
+        height: auto;
+        margin: 3px;
+        border: solid 1px rgb(8, 9, 51);
+        padding: 3px;
+        color: #BBBBBB;
+        text-align: justify;
+        grid-column-end: -1;
+    }
+   
+    .ficha img{
+        border: none;
+        width: 300px;
+    }
+    .legend{
+        margin-top: 0;
+        margin: 5px;
+    }
+
+    .txt-act{
+        grid-template-columns: repeat(4,1fr);
+        margin-top: 10px;
+        border-radius: 4px;
+        max-width: 800px;
+    }
+    .content{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    /* Propiedades para los textos*/
+    .txt{
+        max-width: 800px;
+        min-width: 700px;
+    }
+    .txt ul{
+        margin:  10px;
+        padding: 10px;
+    }
+    p{  
+        padding: 10px;
+        margin: 5px;
+        font-size: 1.1rem;  
+    }
+    h1, h2 {
+        text-align: center;
+        margin: 10px;
+    }
+    h1{
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+
