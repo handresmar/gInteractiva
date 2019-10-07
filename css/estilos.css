@@ -9,11 +9,20 @@ navegador*/
     font-family: 'poppings';
     src: url('./fuentes/Poppings-Regular.ttf');
 }
-
+/*estilizar anclas*/
+.anclas{
+    display: inline-block;
+    gap: 20px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+/*estilos generales de la navegacion*/
 nav{
     display: block;
     margin-top: 5px;
 }
+/*estilos generales de la lista de la navegacion*/
 .nav ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -21,7 +30,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
 }
-
+/*estililos generales de los enlaces de la navegacion*/
 nav a{
     background:#1a2632;
     display: block;
@@ -31,11 +40,12 @@ nav a{
     text-transform: uppercase;
     border-radius: 3px;
 }
+/*Color al pasar el raton por encima*/
 nav a:hover{
     background:#233343;
 }
 
- /*Resumen index*/
+ /*Estilo general del Resumen index*/
 .summ{
     display: block;
     text-align: justify;
@@ -47,14 +57,17 @@ nav a:hover{
     border-radius: 8px;
     background-color:rgba(255, 255, 255, 0.2);
 }
+/*Estilos generales del cuerpo*/
 body{
     background-image: url('../img/cthulhu.jpg');
     color: #2c2014;
 }
+/*Estilos generales para los espacios de texto*/
 .txt{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     border-radius: 4px;
     background-color:rgba(255, 255, 255, 0.3);
 }
@@ -66,7 +79,7 @@ body{
     border-radius: 4px; 
     background-color:rgba(255, 255, 255, 0.3);
 }
-
+/*Estilos generales titulos*/
 h1, h2, .ficha h3 {
     text-align: center;
 }
@@ -77,15 +90,18 @@ h1{
 p{  
     text-align: justify;    
 }
+/*Estilos generales imagenes*/
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+/*Estilos generales piede de pagina primera pagina*/
 footer{
+    padding: 20px;
     text-align: center;
 }
+/*Estilos para la vista de 480 px*/
 @media screen and (max-width: 480px ) {
     .nav ul{
         display: grid;
@@ -113,7 +129,7 @@ footer{
 
 }
 
-
+/*Estilos para la vista de 780 px*/
 @media screen and (max-width: 780px ) {
     p{  
         padding: 7px;
@@ -139,7 +155,7 @@ footer{
 }
 
 
-
+/*Estilos para la vista de 780 px*/
 @media screen and (min-width: 780px ) {
     /* Fuente */
 
@@ -154,7 +170,6 @@ footer{
         display: block;
         margin-top: 5px;
         font-size: 0.8rem; 
-   
     }
     .nav ul{
         display: grid;
@@ -191,7 +206,7 @@ footer{
     }
     /*Habitantes imgs*/
     .ha-imgs{
-        height: 300px;
+        height: 280px;
     }
     .ha-imgs3{
         display: grid;
@@ -203,7 +218,7 @@ footer{
     }
     .ha-imgs2{
         display: grid;
-        gap: 20px;
+        gap: 10px;
         border: 0px;
         grid-template-columns: repeat(2, 1fr);
         align-self: auto;
