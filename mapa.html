@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
+<!--
+    Autor: Hugo Andrés Martínez Díaz - (hugamartinezdia@unal.edu.co)
+    Gráfica interactiva
+    Ejercicio 2
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <title>Sarnath</title>
+    <title>Mapa interactivo</title>
+
+    <!-- Carga la librería de phaser-->
+    <script src="js/phaser.js"></script>
 </head>
-<!--
-    Autor: Hugo Andrés Martínez Díaz - (hugamartinezdia@unal.edu.co)
-    Gráfica interactiva
-    Ejercicio 1
--->
 <body>
+    
     <!-- Contenedor del sitio-->
     <div class="wraper">
-    <!-- Navegación del sitio-->
+        <!-- Navegación del sitio-->
         <nav class="nav">
             <ul class="nav-ul">
                 <li><a href="index.html">Inicio</a></li>
@@ -27,21 +32,17 @@
                 <li><a href="ref.html">Referencias</a></li>
             </ul>
         </nav>
-
+    <!-- Fin del Contenedor del sitio-->
     <!-- Contenido-->
 
-    <!-- titulo--> <h1>Sarnath</h1>
+    <!-- titulo--> <h2>Mapa interactivo de Dreamlands</h2>
     <div class="summ">
-        En el universo <em>"Lovecraftniando"</em> Sarnath fue una ciudad en la tierra de Mnar, capital del reino de Mnar. 
-        Ahora se encuentra destruida y abandonada.
+            Para más información a cerca de cada lugar marcador en el mapa, hacer click sobre cada circulo verde, click sobre la tarjeta para cerrarla.
+        </div>
+
+    <div class="contenedor-mapa">
+            <div id="mapa" class="mapa"></div>
     </div>
-        <img class="sarnath" src="./img/ancientSarnath.jpg" alt="Antigua ciudad de Sarnath">
-           
-    <!-- Fin del Contenedor del sitio-->
-    </div>
-    <footer>
-          <i>  Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn </i>
-    </footer>
-    
+    <script src="js/mapa.js"></script>
 </body>
 </html>
